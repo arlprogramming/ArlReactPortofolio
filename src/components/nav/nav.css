@@ -1,0 +1,128 @@
+/* flex supaya bisa kesamping */
+nav{
+    display: flex;
+    /* background-color: brown; */
+    justify-content: space-around;
+    padding: 20px 0;
+    color: azure;
+    
+    
+}
+
+nav ul{
+    display: flex;
+    width: 30%;
+    justify-content: space-around;
+}
+
+.nav__logo{
+    order: 2;
+    display: flex;
+    font-size: 23px;
+    /* background-color: aquamarine; */
+
+}
+
+.nav__logo i {
+    margin-top: 5px;
+    
+
+}
+
+.nav__menuLeft{
+    order: 1;
+}
+
+.nav__menuRight{
+    order: 3;
+}
+
+/* ========================== HAMBURGER MENU ========================== */
+.menu__toggle{
+    order: 4;
+    display: none;
+    flex-direction: column;
+    height: 20px;
+    justify-content: space-between;
+    position: relative;
+    /* background-color: rgb(255, 0, 0); */
+}
+
+.menu__toggle input{
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    top: -4px;
+    cursor: pointer;
+    opacity: 0;
+    z-index: 2;
+}
+
+.menu__toggle span{
+    display: block;
+    width: 28px;
+    height: 3px;
+    background-color: var(--color-white);
+    border-radius: 3px;
+    transition: all 0.5s;
+}
+
+/* Animasi HUmburger */
+.menu__toggle span:nth-child(2){
+    transform-origin: 0 0;
+}
+
+.menu__toggle span:nth-child(4){
+    transform-origin: 0 100%;
+}
+
+.menu__toggle input:checked ~ span:nth-child(2){
+ transform: rotate(45deg) translate(-1px, -1px);
+}
+
+.menu__toggle input:checked ~ span:nth-child(4){
+    transform: rotate(-45deg) translate(-1px,0);
+}
+
+.menu__toggle input:checked ~ span:nth-child(3){
+    transform: scale(0);
+}
+
+/* ========================== MEDIA QUERIES (MEDIUM DEVICE) ========================== */
+
+@media screen and (max-width: 768px) {
+    
+    nav ul {
+        width: 50%;
+    }
+
+}
+
+/* ========================== MEDIA QUERIES (MOBILE) ========================== */
+
+@media screen and (max-width: 576px) {
+    .menu__toggle{
+        display: flex;
+    }
+
+    nav ul {
+       position: absolute;
+       right: 0;
+       width: 80%;
+       flex-direction: column;
+       height: 100vh;
+       align-items: center;
+       justify-content: space-evenly;
+       background-color: rgb(0, 0, 0);
+       z-index: -1;
+       opacity: 0;
+       transition: all 1s;
+    }
+
+    .nav ul.slide{
+        opacity: 60;
+    }
+
+    
+
+}

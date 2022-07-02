@@ -1,7 +1,8 @@
 import React from "react";
 // import { Routes, Route, useParams } from "react-router-dom";
-import { Link, Outlet } from "react-router-dom";
+import { Outlet } from "react-router-dom";
 import "./learn_javascript.css";
+import TitleJavascript from "./TitleJavascript";
 
 // import Introduction from "./content/introduction/Introduction";
 // import TitleJavascript from "./TitleJavascript";
@@ -17,8 +18,9 @@ const LearnJavascript = () => {
           
 
           <div className="tittle__learning">
-            <h3><Link to='/javascript'>1.Strings</Link></h3>
-            <h3><Link to='/javascript/numbers'>2.Numbers</Link></h3>
+            <TitleJavascript/>
+            {/* <h3><Link to='/javascript'>1.Strings</Link></h3>
+            <h3><Link to='/javascript/numbers'>2.Numbers</Link></h3> */}
           </div>
         </div>
 

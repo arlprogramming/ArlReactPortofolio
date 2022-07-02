@@ -1,16 +1,19 @@
-// import React from "react";
-// import { Link } from "react-router-dom";
-// import './titleJavascript.css'
+import React from "react";
+import { Link } from "react-router-dom";
+import './titleJavascript.css'
 
 
 
-// const TitleJavascript = () => {
+const TitleJavascript = () => {
 
-//   return (
-//     <nav className="navJavascript">
-//       <Link to='javasript/strings'>1.Strings</Link>
-//     </nav>
-//   );
-// };
+  return (
+  <div className="title_javascript">
+    <h3><Link to='/javascript'>1.Strings</Link></h3>
+      <h3><Link to='/javascript/numbers'>2.Numbers</Link></h3>
+  </div>
+      
+   
+  );
+};
 
-// export default TitleJavascript;
+export default TitleJavascript;

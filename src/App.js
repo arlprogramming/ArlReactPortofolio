@@ -14,6 +14,9 @@ import LearnJavascript from "./components/javacript/LearnJavascript";
 import LearnReact from './components/learnreact/LearnReact'
 import Content from "./components/content/Content";
 
+import Introduction from "./components/javacript/content/introduction/Introduction";
+import Numbers from "./components/javacript/content/numbers/Numbers";
+
 
 
 const App = () => {
@@ -22,12 +25,15 @@ const App = () => {
     <>
       <Nav />
       <Routes>
-          <Route path="/" element={<Home/>}></Route>
-          <Route path="/about" element={<Aboutme/>}></Route>
-          <Route path="/contact" element={<Contact/>}></Route>
-          <Route path="/javascript" element={<LearnJavascript/>}></Route>
-          <Route path="/reactjs" element={<LearnReact/>}></Route>
-          <Route path="/content" element={<Content/>}></Route>
+          <Route path="/" element={<Home/>}/>
+          <Route path="/about" element={<Aboutme/>}/>
+          <Route path="/contact" element={<Contact/>}/>
+          <Route path="javascript" element={<LearnJavascript/>}>
+            <Route path="/javascript" element={<Introduction/>}/>
+            <Route path=":numbers" element={<Numbers/>}/>
+          </Route>
+          <Route path="/reactjs" element={<LearnReact/>}/>
+          <Route path="/content" element={<Content/>}/>
       </Routes>
     </>
   </Router>

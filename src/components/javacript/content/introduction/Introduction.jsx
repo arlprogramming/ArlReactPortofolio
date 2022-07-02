@@ -3,7 +3,7 @@ import "./introduction.css";
 
 const Introduction = () => {
   return (
-      <div id="strings">
+      <div>
         <h2 className="tittle__content">JAVASCRIPT STRINGS</h2>
         <div className="materi__content">
           <p>

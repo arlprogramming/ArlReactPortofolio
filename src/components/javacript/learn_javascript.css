@@ -27,18 +27,14 @@ font-family: 'Bubblegum Sans', cursive; */
 
 .page__left{
     width: 30%;
-    text-align: center;
+    /* text-align: center; */
     background-color: brown;
     border-radius: 2rem;
 }
 
-.page__left h2,p {
+.title {
+    text-align: center;
     color: #f8dc00;
-}
-
-.hr__left{
-    width: 100%;
-    height: 5px;
 }
 
 .tittle__learning{
@@ -52,10 +48,10 @@ font-family: 'Bubblegum Sans', cursive; */
     /* background: #ff6a00; */
 }
 
-.tittle__materi{
+/* .tittle__materi{
     font-family: 'Bubblegum Sans', cursive;
     color: #ffffff;
-}
+} */
 
 /* ===================================== RIGHT PAGE ================================== */
 

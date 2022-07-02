@@ -4,7 +4,6 @@ import logo from '../../assets/logo.svg';
 
 const Home = () => {
   return (
-    <section id='home'>
       <div className="Home__App">
       <header className="Home__Header">
         <img src={logo} className="Home__logo" alt="logo" />
@@ -21,7 +20,6 @@ const Home = () => {
         </a>
       </header>
       </div>
-    </section>
   )
 }
 

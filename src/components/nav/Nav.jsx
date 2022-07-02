@@ -14,17 +14,16 @@ const Nav = () => {
         <h4>ARL React</h4>
       </div>
 
-      <ul  className = {hiddenMenu == '' ? 'nav__menuLeft' : 'slide' }>
-        <li className='Link' as={Link}><a href='/'>Home</a></li>
-        <li className='Link' as={Link}><a href='/About'>About</a></li>
-        <li className='Link'><a href='/services'>Services</a></li>
-        <li className='Link'><a href='/contact'>Contact Us</a></li>
+      <ul  className = {hiddenMenu === '' ? 'nav__menuLeft' : 'slide' }>
+        <li className='Link'><Link to="/">Home</Link></li>
+        <li className='Link'><Link to="/about">About</Link></li>
+        <li className='Link'><Link to="/contact">Contact</Link></li>     
       </ul>
 
       <ul className='nav__menuRight'>
-        <li className='Link'><a href='/javascript'>Javascript</a></li>
-        <li className='Link'><a href='/react'>ReactJS</a></li>
-        <li className='Link'><a href='/content'>Content</a></li>
+      <li className='Link'><Link to="/javascript">Javascript</Link></li>
+      <li className='Link'><Link to="/reactjs">ReactJS</Link></li>
+      <li className='Link'><Link to="/content">Content</Link></li>
         
       </ul>
 

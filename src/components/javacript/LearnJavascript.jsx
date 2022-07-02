@@ -10,20 +10,20 @@ const LearnJavascript = () => {
     <div className="page__javascript">
 
         <div className="page__left">
-          <h2>Hello, in this page</h2>
-          <p>i wanna learning about Javascript</p>
+          <h2 className="title">Hello, in this page</h2>
+          <p className="title">i wanna learning about Javascript</p>
 
           <div className="tittle__learning">
             <TitleJavascript />
-            
           </div>
         </div>
 
         <div className="page__right">
           <div className="content">
-
-              <Introduction />
-
+            {/* <Routes> yang membungkus dan <Route> untuk membuat path di Browser */}
+              <Routes>
+                <Route path="introduction" element={<Introduction/>} />
+              </Routes>
           </div>
         </div>
 

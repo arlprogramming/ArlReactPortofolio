@@ -59,8 +59,10 @@ font-family: 'Bubblegum Sans', cursive; */
     width: 70%;
     background-color: #181818;
     border-radius: 2rem;
+    overflow: scroll;
 }
 
 .content{
     margin: 1rem;
 }
+

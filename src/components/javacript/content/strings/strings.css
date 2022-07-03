@@ -1,9 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Bubblegum+Sans&display=swap');
 
 #introduction {
     margin: 0;
     padding: 0;
 }
 .tittle__content{
+    position: static;
     font-size: 90px;
     font-family: 'Black Han Sans', sans-serif;
     line-height: 76px;
@@ -13,5 +15,12 @@
 
 .materi__content{
     font-family: 'Bubblegum Sans', cursive;
+    color: #ffffff;
 }
+
+.materi__content h2{
+    font-family: 'Black Han Sans', sans-serif;
+    color: #ffffff;
+}
+
 

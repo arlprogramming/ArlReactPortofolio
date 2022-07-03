@@ -14,7 +14,7 @@ import LearnJavascript from "./components/javacript/LearnJavascript";
 import LearnReact from './components/learnreact/LearnReact'
 import Content from "./components/content/Content";
 
-import Introduction from "./components/javacript/content/introduction/Introduction";
+import Strings from "./components/javacript/content/strings/Strings";
 import Numbers from "./components/javacript/content/numbers/Numbers";
 
 
@@ -29,7 +29,7 @@ const App = () => {
           <Route path="/about" element={<Aboutme/>}/>
           <Route path="/contact" element={<Contact/>}/>
           <Route path="javascript" element={<LearnJavascript/>}>
-            <Route path="/javascript" element={<Introduction/>}/>
+            <Route path="/javascript" element={<Strings/>}/>
             <Route path=":numbers" element={<Numbers/>}/>
           </Route>
           <Route path="/reactjs" element={<LearnReact/>}/>

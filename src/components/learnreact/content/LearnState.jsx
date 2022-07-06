@@ -15,7 +15,7 @@ const LearnState = () => {
 
   return (
     <div className="materi__react">
-      <h2 className="tittle__content">ReactJs State</h2>
+      <h2 className="tittle__content">{!value ? "ReactJs State" : value}</h2>
       <div className="materi__content">
         <h2>in this step i will learning about STATE</h2>
         <p>first i will create 'Button', and if button is click will show Alert</p>
@@ -25,7 +25,7 @@ const LearnState = () => {
         </button>
 
         <p>and now i will create state, first i will import useState</p>
-        <p>and here i ill call the STATE, dimana judul halaman dan menubar berubah menjadi "{value}"</p>
+        <p>and here i will call the STATE, when button is click title page change to "Learning"</p>
       </div>
     </div>
   );

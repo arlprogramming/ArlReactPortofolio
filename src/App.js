@@ -16,6 +16,7 @@ import Content from "./components/content/Content";
 
 import Strings from "./components/javacript/content/strings/Strings";
 import Numbers from "./components/javacript/content/numbers/Numbers";
+import LearnState from "./components/learnreact/content/LearnState";
 
 
 
@@ -32,7 +33,9 @@ const App = () => {
             <Route path="/javascript" element={<Strings/>}/>
             <Route path=":numbers" element={<Numbers/>}/>
           </Route>
-          <Route path="/reactjs" element={<LearnReact/>}/>
+          <Route path="reactjs" element={<LearnReact/>}>
+            <Route path="/reactjs" element={<LearnState/>}/>
+          </Route>
           <Route path="/content" element={<Content/>}/>
       </Routes>
     </>

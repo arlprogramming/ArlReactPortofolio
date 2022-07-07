@@ -6,17 +6,18 @@ import {
   Route,
 } from "react-router-dom";
 
-import Nav from "./components/nav/Nav";
-import Home from "./components/home/Home";
-import Aboutme from "./components/about/Aboutme";
-import Contact from "./components/contact/Contact";
-import LearnJavascript from "./components/javacript/LearnJavascript";
-import LearnReact from './components/learnreact/LearnReact'
-import Content from "./components/content/Content";
+import Nav from "./components/menubar/nav/Nav";
+import Home from "./components/menubar/home/Home";
+import Aboutme from "./components/menubar/about/Aboutme";
+import Contact from "./components/menubar/contact/Contact";
+import LearnJavascript from "./components/materi/javacript/LearnJavascript";
+import LearnReact from './components/materi/learnreact/LearnReact'
+import Content from "./components/menubar/content/Content";
 
-import Strings from "./components/javacript/content/strings/Strings";
-import Numbers from "./components/javacript/content/numbers/Numbers";
-import LearnState from "./components/learnreact/content/LearnState";
+
+import Strings from "./components/materi/javacript/content/strings/Strings";
+import Numbers from "./components/materi/javacript/content/numbers/Numbers";
+import LearnState from "./components/materi/learnreact/content/LearnState";
 
 
 

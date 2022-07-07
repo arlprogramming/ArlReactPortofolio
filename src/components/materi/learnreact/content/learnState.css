@@ -23,3 +23,12 @@
     font-family: 'Black Han Sans', sans-serif;
     color: #ffffff;
 }
+
+.jumlah__pengunjung{
+    margin: 50px auto;
+    padding: 0;
+    width: 40%;
+    text-align: center;
+    border-radius: 10px;
+    background: linear-gradient(to right, #010631, #6b0030);
+}

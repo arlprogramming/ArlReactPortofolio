@@ -30,12 +30,8 @@ const Strings = () => {
         <p>
           Backticks are “advanced functional” quotes. They support us embedding
           variables and expressions into strings by wrapping them in <br/>
-          <code>
-            `hello $<span>{}</span>`
-          </code>
-          , for example :
         </p>
-
+         
         <p>
           {/* let name = "John"; // mengembed satu variabel <br />
           alert( `Hello, ${name}!`); // Hello, John! // mengembed expresi <br />

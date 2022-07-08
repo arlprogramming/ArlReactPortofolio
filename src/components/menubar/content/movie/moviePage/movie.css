@@ -1,0 +1,26 @@
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.card__container{
+    overflow: hidden;
+    box-shadow: 0 2px 20px rgba(20, 20, 20, 0.133);
+    border-radius: 2rem;
+    border: 5px solid wheat;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: transform 200ms ease-in;
+}
+
+.card__container button{
+    background-color: aquamarine;
+}

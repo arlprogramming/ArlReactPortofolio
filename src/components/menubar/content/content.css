@@ -1,0 +1,12 @@
+.content_portofolio{
+    width: 1200px;
+    height: 500px;
+    margin: auto;
+    padding: 20px;
+
+    background-image: linear-gradient(#a11052, #ff6a00);
+    overflow-x: hidden;
+    font-family: 'Roboto Mono';
+    color: black;
+    border-radius: 2rem;
+}

@@ -2,7 +2,9 @@
     display: grid;
     grid-template-columns: 35% 50%;
     gap: 15%;
+    
 }
+
 
 .about__me{
     width: 100%;
@@ -10,7 +12,8 @@
     border-radius: 2rem;
     background: linear-gradient(45deg, transparent, var(--color-primary), transparent);
    overflow: hidden;
-    place-items: center;    
+    place-items: center;
+    margin-left: 100px;    
 }
 
 .about__me-image{
@@ -25,10 +28,15 @@
     transition: var(--transition);
 }
 
+.about__content{
+    margin-right: 50px;
+}
+
 .about__cards{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1.5rem;
+    
 }
 
 .about__card{

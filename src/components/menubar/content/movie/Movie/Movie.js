@@ -34,7 +34,7 @@ const Movie = () => {
 
   //membuat useEffect
   useEffect(() => {
-    searchMovies('spiderman')
+    searchMovies('')
   }, []);
 
   return (

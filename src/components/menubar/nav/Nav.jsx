@@ -21,8 +21,8 @@ const Nav = () => {
       </ul>
 
       <ul className='nav__menuRight'>
-      <li className='Link'><Link to="/javascript">Javascript</Link></li>
-      <li className='Link'><Link to="/reactjs">ReactJS</Link></li>
+        <li className='Link'><Link to="/javascript">Javascript</Link></li>
+        <li className='Link'><Link to="/reactjs">ReactJS</Link></li>
       <li className='Link'><Link to="/content">Content</Link></li>
         
       </ul>

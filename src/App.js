@@ -18,6 +18,7 @@ import Content from "./components/menubar/content/Content";
 import Strings from "./components/materi/javacript/content/strings/Strings";
 import Numbers from "./components/materi/javacript/content/numbers/Numbers";
 import LearnState from "./components/materi/learnreact/content/LearnState";
+import LearnDom from "./components/materi/javacript/content/dom/LearnDom";
 
 
 
@@ -30,9 +31,10 @@ const App = () => {
           <Route path="/" element={<Home/>}/>
           <Route path="/about" element={<Aboutme/>}/>
           <Route path="/contact" element={<Contact/>}/>
-          <Route path="javascript" element={<LearnJavascript/>}>
-            <Route path="/javascript" element={<Strings/>}/>
-            <Route path=":numbers" element={<Numbers/>}/>
+          <Route path="javascript/" element={<LearnJavascript/>}>
+            <Route path="strings" element={<Strings/>}/>
+            <Route path="numbers" element={<Numbers/>}/>
+            <Route path="dom" element={<LearnDom/>}/>
           </Route>
           <Route path="reactjs" element={<LearnReact/>}>
             <Route path="/reactjs" element={<LearnState/>}/>

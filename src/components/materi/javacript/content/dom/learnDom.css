@@ -22,3 +22,16 @@
     font-family: 'Black Han Sans', sans-serif;
     color: #ffffff;
 }
+
+.changeText{
+    text-align: center;
+    margin: 0 auto;
+    /* background-color: aqua; */
+}
+
+.nintendoImg{
+    /* background-color: aqua; */
+    width: 350px;
+    margin: 0 auto;
+    text-align: center;
+}

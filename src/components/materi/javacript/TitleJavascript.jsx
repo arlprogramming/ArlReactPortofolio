@@ -30,6 +30,7 @@ const TitleJavascript = () => {
       <Link to="strings"><h2>1.Strings</h2></Link>
       <Link to="numbers"><h2>2.Numbers</h2></Link>
       <Link to="dom"><h2>3.DOM</h2></Link>
+      <Link to="variable"><h2>4.Variable</h2></Link>
     </div>
   );
 };

@@ -19,6 +19,7 @@ import Strings from "./components/materi/javacript/content/strings/Strings";
 import Numbers from "./components/materi/javacript/content/numbers/Numbers";
 import LearnState from "./components/materi/learnreact/content/LearnState";
 import LearnDom from "./components/materi/javacript/content/dom/LearnDom";
+import LearnVariable from "./components/materi/javacript/content/variable/LearnVariable";
 
 
 
@@ -35,6 +36,7 @@ const App = () => {
             <Route path="strings" element={<Strings/>}/>
             <Route path="numbers" element={<Numbers/>}/>
             <Route path="dom" element={<LearnDom/>}/>
+            <Route path="variable" element={<LearnVariable/>}/>
           </Route>
           <Route path="reactjs" element={<LearnReact/>}>
             <Route path="/reactjs" element={<LearnState/>}/>
